@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI Assignment 2.Plugins", "AI Assignment 2.Plugins.csproj", "{C3B70FAF-16F0-D14F-57BB-64FAFA8C85DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI Assignment 2", "AI Assignment 2.csproj", "{8FD47201-1420-359D-1D41-5C20066D7593}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI Assignment 2.Editor.Plugins", "AI Assignment 2.Editor.Plugins.csproj", "{35463F6E-98AF-A6C1-6606-A1D62BAEF391}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3B70FAF-16F0-D14F-57BB-64FAFA8C85DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3B70FAF-16F0-D14F-57BB-64FAFA8C85DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3B70FAF-16F0-D14F-57BB-64FAFA8C85DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3B70FAF-16F0-D14F-57BB-64FAFA8C85DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FD47201-1420-359D-1D41-5C20066D7593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FD47201-1420-359D-1D41-5C20066D7593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FD47201-1420-359D-1D41-5C20066D7593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FD47201-1420-359D-1D41-5C20066D7593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35463F6E-98AF-A6C1-6606-A1D62BAEF391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35463F6E-98AF-A6C1-6606-A1D62BAEF391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35463F6E-98AF-A6C1-6606-A1D62BAEF391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35463F6E-98AF-A6C1-6606-A1D62BAEF391}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
