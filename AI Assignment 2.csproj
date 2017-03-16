@@ -82,7 +82,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Assignment\Scripts\CastleGuardAI.cs" />
+    <Compile Include="Assets\Assignment\Scripts\CastleGuardAI\AddPointToList.cs" />
+    <Compile Include="Assets\Assignment\Scripts\CastleGuardAI\IfBool.cs" />
+    <Compile Include="Assets\Assignment\Scripts\CastleGuardAI\IsListNotEmpty.cs" />
+    <Compile Include="Assets\Assignment\Scripts\CastleGuardAI\IsWithinDistance.cs" />
+    <Compile Include="Assets\Assignment\Scripts\CastleGuardAI\PlayRandomAnimationFromList.cs" />
+    <Compile Include="Assets\Assignment\Scripts\CastleGuardAI\RemovePointFromList.cs" />
+    <Compile Include="Assets\Assignment\Scripts\CastleGuardAI\SetAgentDestinationToPointInList.cs" />
     <Compile Include="Assets\Assignment\Scripts\Path.cs" />
+    <Compile Include="Assets\Assignment\Scripts\ScreenPointToRayClick.cs" />
+    <Compile Include="Assets\IdleState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Assignment\Animation\Animator\placeholder.txt" />

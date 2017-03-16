@@ -11,10 +11,11 @@ public class CastleGuardAI : MonoBehaviour
     private Animator animator;
 
     public AnimationClip[] idleClips;
-    Animation animation;
 
     public Path path;
     private int waypointIndex = 0;
+
+    public List<Vector3> searchPoints;
 
     public float deadZone = 10f;
     public float angularSpeedDampTime = 5f;
@@ -27,10 +28,8 @@ public class CastleGuardAI : MonoBehaviour
     void Awake()
     {
         animator = GetComponent<Animator>();
-        animation = GetComponent<Animation>();
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
-        SetAgentPath();
 
         deadZone *= Mathf.Deg2Rad;
 
@@ -38,15 +37,7 @@ public class CastleGuardAI : MonoBehaviour
 
     void Update()
     {
-        if (idling)
-        {
-            
-        }
-        else
-        {
-            UpdateCurrentWaypoint();
-            ProcessPath();
-        }
+        ProcessPath();
     }
 
     
@@ -56,12 +47,9 @@ public class CastleGuardAI : MonoBehaviour
         agent.velocity = animator.deltaPosition / Time.deltaTime;
     }
 
-    void SetAgentPath()
+    public void IdleStart()
     {
-        if (path != null && waypointIndex < path.waypoints.Count)
-        {
-            agent.SetDestination(path.waypoints[waypointIndex].position);
-        }
+        idling = true;
     }
 
     public void IdleEnd()
@@ -83,7 +71,6 @@ public class CastleGuardAI : MonoBehaviour
             }
             waypointIndex += 1;
             waypointIndex = waypointIndex % path.waypoints.Count;
-            SetAgentPath();
         }
     }
 
